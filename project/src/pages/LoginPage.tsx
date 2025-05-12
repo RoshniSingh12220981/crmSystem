@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
@@ -50,7 +50,11 @@ const LoginPage: React.FC = () => {
             Sign in to your account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Or{' '}
+            Don't have an account?{' '}
+            <Link to="/signup" className="font-medium text-primary-600 hover:text-primary-500">
+              Sign up
+            </Link>
+            {' '}or{' '}
             <button
               onClick={handleGoogleLogin}
               disabled={isLoading}

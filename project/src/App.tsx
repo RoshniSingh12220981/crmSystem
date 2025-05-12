@@ -6,6 +6,7 @@ import { DataProvider } from './contexts/DataContext';
 
 // Import pages
 import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUpPage';
 import DashboardPage from './pages/DashboardPage';
 import CustomersPage from './pages/CustomersPage';
 import OrdersPage from './pages/OrdersPage';
@@ -44,8 +45,9 @@ function App() {
             {/* Redirect root to login if not authenticated */}
             <Route path="/" element={<Navigate to="/login" replace />} />
 
-            {/* Login route */}
+            {/* Auth routes */}
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
 
             {/* Protected routes */}
             <Route path="/dashboard" element={
