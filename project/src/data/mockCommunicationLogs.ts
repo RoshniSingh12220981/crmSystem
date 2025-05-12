@@ -1,0 +1,60 @@
+import { CommunicationLog } from '../types';
+
+export const mockCommunicationLogs: CommunicationLog[] = [
+  {
+    id: 'log1',
+    campaignId: 'camp1',
+    customerId: 'c1',
+    customerName: 'Jane Smith',
+    status: 'SENT',
+    timestamp: '2023-06-05T09:31:00Z',
+  },
+  {
+    id: 'log2',
+    campaignId: 'camp1',
+    customerId: 'c3',
+    customerName: 'Alice Williams',
+    status: 'SENT',
+    timestamp: '2023-06-05T09:32:00Z',
+  },
+  {
+    id: 'log3',
+    campaignId: 'camp1',
+    customerId: 'c7',
+    customerName: 'Sarah Wilson',
+    status: 'SENT',
+    timestamp: '2023-06-05T09:33:00Z',
+  },
+  {
+    id: 'log4',
+    campaignId: 'camp2',
+    customerId: 'c3',
+    customerName: 'Alice Williams',
+    status: 'SENT',
+    timestamp: '2023-07-12T14:16:00Z',
+  },
+  {
+    id: 'log5',
+    campaignId: 'camp2',
+    customerId: 'c7',
+    customerName: 'Sarah Wilson',
+    status: 'FAILED',
+    timestamp: '2023-07-12T14:17:00Z',
+  },
+  {
+    id: 'log6',
+    campaignId: 'camp3',
+    customerId: 'c2',
+    customerName: 'Robert Johnson',
+    status: 'SENT',
+    timestamp: '2023-08-20T11:46:00Z',
+  },
+  {
+    id: 'log7',
+    campaignId: 'camp3',
+    customerId: 'c4',
+    customerName: 'Michael Brown',
+    status: 'SENT',
+    timestamp: '2023-08-20T11:47:00Z',
+  },
+];
